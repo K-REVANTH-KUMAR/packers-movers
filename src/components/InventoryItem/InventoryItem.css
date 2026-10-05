@@ -1,0 +1,17 @@
+.item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px 14px;
+  background-color: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  color: #333;
+  font-size: 13px;
+}
+
+.item-count {
+  color: #e53935;
+  font-weight: 600;
+}

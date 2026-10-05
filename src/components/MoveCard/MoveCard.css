@@ -1,0 +1,216 @@
+.move-card {
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 24px 28px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* =========================
+   FROM / TO
+========================= */
+
+.locations-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.location {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.location svg {
+  color: #e53935;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.location h3 {
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.label {
+  color: #777;
+  font-size: 12px;
+  margin: 0 0 6px;
+}
+
+/* =========================
+   MOVE INFORMATION
+========================= */
+
+.move-info-container {
+  width: 100%;
+  display: grid;
+
+  /*
+    Each field gets a reasonable
+    amount of space.
+  */
+  grid-template-columns:
+    0.9fr
+    1fr
+    0.9fr
+    0.9fr
+    1.5fr
+    0.8fr
+    1.2fr;
+
+  column-gap: 24px;
+
+  margin-top: 26px;
+  padding-top: 20px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.info-item {
+  min-width: 0;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.info-item svg {
+  color: #777;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.info-item > div {
+  min-width: 0;
+}
+
+.info-item p {
+  color: #222;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.info-item .label {
+  margin-bottom: 6px;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status-info {
+  min-width: 0;
+}
+
+.status-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 10px;
+
+  background-color: #fff3e0;
+  color: #f57c00;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* =========================
+   VIEW DETAILS BUTTON
+========================= */
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.button-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  background-color: #ffffff;
+  color: #e53935;
+
+  border: 1px solid #e53935;
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #fff5f5;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .move-info-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: 20px;
+  }
+}
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .locations-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .move-info-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .move-card {
+    padding: 18px;
+  }
+
+  .move-info-container {
+    grid-template-columns: 1fr;
+  }
+
+  .button-container {
+    justify-content: flex-start;
+  }
+}

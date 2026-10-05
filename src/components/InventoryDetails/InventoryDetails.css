@@ -1,0 +1,9 @@
+.inventory-details {
+  margin-top: 30px;
+}
+
+.inventory-details > h3 {
+  margin: 0 0 18px;
+  color: #222;
+  font-size: 20px;
+}

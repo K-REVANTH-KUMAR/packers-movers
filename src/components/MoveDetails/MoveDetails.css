@@ -1,0 +1,20 @@
+.move-details {
+  margin-top: 24px;
+  padding: 28px;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.details-header h3 {
+  margin: 0;
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+}
